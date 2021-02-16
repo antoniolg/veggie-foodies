@@ -5,6 +5,20 @@ plugins {
     id("com.android.library")
 }
 
+// This is a documented bug in Android 7.0.0-alpha plugin
+// https://youtrack.jetbrains.com/issue/KT-43944
+android {
+
+    configurations {
+        create("androidTestApi")
+        create("androidTestDebugApi")
+        create("androidTestReleaseApi")
+        create("testApi")
+        create("testDebugApi")
+        create("testReleaseApi")
+    }
+}
+
 kotlin {
     android()
     ios {

@@ -1,9 +1,14 @@
 package es.veggiefoodies.app.androidApp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.setContent
+import es.veggiefoodies.app.androidApp.ui.theme.VeggieFoodiesTheme
 import es.veggiefoodies.app.shared.Greeting
-import android.widget.TextView
 
 fun greet(): String {
     return Greeting().greeting()
@@ -12,9 +17,18 @@ fun greet(): String {
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val tv: TextView = findViewById(R.id.text_view)
-        tv.text = greet()
+        setContent {
+            VeggieFoodiesTheme {
+                // A surface container using the 'background' color from the theme
+                Surface(color = MaterialTheme.colors.background) {
+                    GreetingText()
+                }
+            }
+        }
     }
+}
+
+@Composable
+fun GreetingText() {
+    Text(text = greet())
 }
