@@ -1,8 +1,8 @@
-package es.veggiefoodes.app.androidApp
+package es.veggiefoodies.app.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import es.veggiefoodes.app.shared.Greeting
+import es.veggiefoodies.app.shared.Greeting
 import android.widget.TextView
 
 fun greet(): String {

@@ -1,4 +1,4 @@
-package es.veggiefoodes.app.shared
+package es.veggiefoodies.app.shared
 
 import kotlin.test.Test
 import kotlin.test.assertTrue

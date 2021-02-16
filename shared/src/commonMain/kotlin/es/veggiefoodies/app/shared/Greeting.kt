@@ -1,5 +1,4 @@
-package es.veggiefoodes.app.shared
-
+package es.veggiefoodies.app.shared
 
 class Greeting {
     fun greeting(): String {

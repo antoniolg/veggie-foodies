@@ -1,4 +1,4 @@
-package es.veggiefoodes.app.shared
+package es.veggiefoodies.app.shared
 
 expect class Platform() {
     val platform: String

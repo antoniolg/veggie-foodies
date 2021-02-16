@@ -1,4 +1,4 @@
-package es.veggiefoodes.app.shared
+package es.veggiefoodies.app.shared
 
 import org.junit.Assert.assertTrue
 import org.junit.Test
