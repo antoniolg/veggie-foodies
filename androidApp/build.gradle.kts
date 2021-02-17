@@ -12,7 +12,7 @@ dependencies {
     implementation("androidx.compose.ui:ui:${rootProject.extra["compose_version"]}")
     implementation("androidx.compose.material:material:${rootProject.extra["compose_version"]}")
     implementation("androidx.compose.ui:ui-tooling:${rootProject.extra["compose_version"]}")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-alpha06")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.0")
 }
 
 android {
@@ -42,6 +42,5 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion = rootProject.extra["compose_version"] as String
-        kotlinCompilerVersion = "1.4.21"
     }
 }
